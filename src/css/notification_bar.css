@@ -1,0 +1,48 @@
+@import "./style.css" root;
+
+
+:root
+{
+    /* --primary-light-color:#FFFFFF;
+    --secondary-light-color:#F5F6F8;
+    --text-light-primary-color:#383C40;
+    --text-light-secondary-color:#495057; */
+
+    
+    --primary-color:#2B2E3B;
+    --secondary-color:#22252F;
+    --standard-color:#5B73E8;
+    --text-primary-color:#383C40;
+    --text-secondary-color:#F6F6F6;  
+    
+    --icons-color:#A6B0CF;
+    /* font-size: 1rem; */
+}
+#search-value{
+    color: pri;
+}
+
+.notification-bar
+{
+    height: 4rem;
+    background-color: var(--primary-color);
+    color: var(--text-primary-color)
+}
+.search-bar,#search-value{
+    border: none;
+    background-color: var(--primary-color);
+}
+#search-value{
+    width: 5rem;
+}
+.notif-bar-icon{
+    color: var(--icons-color);
+}
+.notification-number{
+    font-size: 10px;
+    color: white;
+    /* background-color: var(--standard-color); */
+}
+.admin-name{
+    color: var(--icons-color)
+}
