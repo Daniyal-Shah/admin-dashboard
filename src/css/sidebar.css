@@ -25,7 +25,7 @@
     margin-bottom: 10px;
 }
 
-.sidebar{
+/* .sidebar{
     height: 100vh;
     background-color: var(--primary-color);
 }
@@ -37,4 +37,33 @@
 }
 .btn-transparent{
     background-color: transparent;
+} */
+
+.wrapper{
+    color: white;
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: max-content;
 }
+#sidebar{
+    padding: 2rem;
+}
+.btn{
+    color: violet;
+}
+.submenu>li{
+ margin: 1rem 0;  
+}
+.submenu>li>a
+{
+    text-decoration: none;
+    color: gold; 
+}
+.submenu>li>a:hover{
+    color: var(--standard-color);
+    transition: 0.5s linear;
+}
+.btn:hover{
+    color: var(--standard-color);
+}
+

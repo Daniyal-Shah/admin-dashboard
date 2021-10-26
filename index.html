@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Fontawesome icons cdn-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <!-- Bootstrap CSS -->
@@ -19,58 +20,108 @@
   </head>
   <body>
       
-    <!-- sidebar starts -->
 
-    <div class="container-fluid sidebar-container">
-      <div class="row">
-        <div class="col-3 sidebar">
+    <!-- Sidebar starts -->
+    <div class="wrapper">
 
-          <!--Header logo and toggle button -->
-          <div class="sidebar-header row justify-content-center ">
 
-                <a href="#" >
-                  <i class="fas fa-webcam fa-2x brand-logo"></i>
-                </a>
-             
-                <a href="#">
-                  <p class="sidebar-text">Ecommerce</p>
-                </a>
-  
+      <nav id="sidebar">
+        <div>
+
+          <div class="sidebar-header d-flex py-3 px-1 justify-content-center align-items-center">
+            <i class="fas fa-webcam fa-2x"></i>
+            <h3 class="ml-2">Admin</h3>
           </div>
 
-          <div class="primary-divider"></div>
-          <!-- Content  -->
-          <div class="sidebar-content">
-            <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-center active">Dashboard</li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                All Products
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Categories
-                <span class="badge badge-primary badge-pill">2</span>              <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Categories
-                  <span class="badge badge-primary badge-pill">2</span>              <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Categories
-                    <span class="badge badge-primary badge-pill">2</span>              <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Categories
-                      <span class="badge badge-primary badge-pill">2</span>              
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Categories
-                <span class="badge badge-primary badge-pill">2</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Customers
-                <span class="badge badge-primary badge-pill">1</span>
-              </li>
-            </ul>
-          </div>          
+          <!-- Main Menu -->
+          <ul class="list-unstyled components my-5">
+            <i class="fas fa-tachometer"></i>
+            <li class="active btn ">Dasboard</li>
+            
+            <!-- Products  starts-->
+            <li>
+               <i class="fas fa-cubes"></i>
+              <a href="#productSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle btn">Products</a>
+              <!-- Submenu -->
+              <ul class="collapse list-unstyled ml-4 submenu" id="productSubMenu">
+                <li>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <a href="" class="">Add new product</a>
+                </li>
+                <li>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <a href="" class="">Delete OR edit product</a>
+                </li>
+                <li>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>                  
+                  <a href="" class="">All products</a>
+                </li>
+              </ul>
+            </li>
+            <!-- products ends -->
+
+            <!-- category  starts-->
+            <li>
+              <i class="fas fa-th-large"></i>              
+              <a href="#categoriesSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle btn">Categories</a>
+              <!-- Submenu -->
+              <ul class="collapse list-unstyled ml-4 submenu" id="categoriesSubMenu">
+                <li>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>                  
+                  <a href="" class="" >Add new category</a>
+                </li>
+                <li>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <a href="" class="">All all categories</a>
+                </li>
+              </ul>
+            </li>
+            <!-- category ends -->
+            
+            <!-- order starts -->
+            <li>
+              <i class="fas fa-truck"></i>
+              <a href="" class="btn">Orders</a>
+              <span class="badge badge-primary badge-pill">2</span>    
+            </li>
+            <!-- order ends -->
+
+            <!-- customers starts -->
+            <li>
+              <i class="fas fa-users"></i>
+              <a href="" class="btn">Customers</a>
+            </li>
+            <!-- customers ends -->
+
+            <!-- Sales starts-->
+            <li>
+              <i class="fa fa-signal" aria-hidden="true"></i>
+              <a href="" class="btn">Sales</a>
+            </li>
+             <!-- sales ends  -->
+            <!-- Settings starts-->
+            <li>
+              <i class="fas fa-cogs"></i>
+              <a href="" class="btn">Settings</a>
+            </li>
+             <!-- settings ends  -->
+
+
+            <!-- About Starts -->
+            <li>
+              <i class="fas fa-info-circle"></i>
+              <a href="" class="btn">About</a>
+            </li>
+             <!-- About ends  -->
+            
+          </ul>
+        </div>
+        <div class="social-links">
 
         </div>
-      </div>
+      </nav>
+      
     </div>
-
-
     <!-- sidebar ends -->
 
 
